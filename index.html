@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html dir="rtl">
 <head>
-  <title>Vuetify Parallax Starter</title>
+  <title>اﻟﻌﻨﻮﺩ</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900' rel="stylesheet">
@@ -44,22 +44,22 @@
           color="white"
         >
           <v-btn value="whoAreWe" large>
-            <span>إحنا مين؟</span>
+            <span>ﺇﺣﻨﺎ ﻣﻴﻦ؟</span>
             <v-icon>mdi-human-greeting</v-icon>
           </v-btn>
 
           <v-btn value="products" large>
-            <span>منتجاتنا</span>
+            <span>ﻣﻨﺘﺠﺎﺗﻨﺎ</span>
             <v-icon>mdi-heart</v-icon>
           </v-btn>
 
           <v-btn value="offers" large>
-            <span>عروضنا</span>
+            <span>ﻋﺮﻭﺿﻨﺎ</span>
             <v-icon>mdi-gift</v-icon>
           </v-btn>
 
           <v-btn value="contact" large>
-            <span>إزاي توصلنا؟</span>
+            <span>ﺇﺯاﻱ ﺗﻮﺻﻠﻨﺎ؟</span>
             <v-icon>mdi-map-marker</v-icon>
           </v-btn>
         </v-bottom-navigation>
@@ -74,52 +74,64 @@
         >
           <v-flex xs12 sm4 class="my-4">
             <div class="text-center">
-              <h1 style="font-size: 40px;">احنا مين؟</h1>
+              <h1 style="font-size: 40px;">ﺇﺣﻨﺎ ﻣﻴﻦ؟</h1>
             </div>
           </v-flex>
           <v-flex xs12>
-            <v-container grid-list-xl>
-              <v-layout row wrap align-center>
-                <v-flex xs12 md4>
-                  <v-card flat class="transparent">
-                    <v-card-text class="text-center">
-                      <v-icon x-large class="red--text text--accent-2">mdi-palette</v-icon>
-                    </v-card-text>
-                    <v-card-title primary-title class="layout justify-center">
-                      <div class="text-center" style="font-size: 30px;">أي كلام دلوقتي</div>
-                    </v-card-title>
-                    <v-card-text>
-                      احنا اللي دهنّا الهوا دوكو واحنا اللي خرمنا التعريفة واحنا اللي غرقنا السمك في الماية.
-                    </v-card-text>
-                  </v-card>
+            <v-container>
+              <div class="text-center">
+                شركه العنود المصرية  للعطور الطبيعية المستوحاة من الطبيعية،<br> و مكوناتها التي تتناسب في الاستخدام لجميع الأشخاص و<br> بخاصة أصحاب البشرة الحساسة حيث تقدم شركة العنود عطور طبيعية مضادة للحساسية ؛ <br>تسمح للأشخاص ذو حساسية الجلد بالإستمتاع برائحة فاخرة دون المساومة علي الجودة<br> و إستخدام الزيوت العطرية النقية فقط ، و بسعر يناسب الفئة المتوسطه .
+              </div>
+              
+              <v-layout
+                row
+                class="my-12 text-center"
+                align-center
+              >
+                <v-flex xs12 sm4 class="my-1">
+                    <v-btn
+                    @click="bottomNav = 'products'"
+                    color="deep-purple accent-4"
+                    class="ma-2 white--text"
+                    tile
+                    outlined
+                    large
+                  >
+                    منجاتنا  
+                    <v-icon left dark>mdi-heart</v-icon>
+                  </v-btn>
                 </v-flex>
-                <v-flex xs12 md4>
-                  <v-card flat class="transparent">
-                    <v-card-text class="text-center">
-                      <v-icon x-large class="red--text text--accent-2">mdi-flash</v-icon>
-                    </v-card-text>
-                    <v-card-title primary-title class="layout justify-center">
-                      <div class="text-center"style="font-size: 30px;">أي كلام برده</div>
-                    </v-card-title>
-                    <v-card-text>
-                      احنا اللي دهنّا الهوا دوكو واحنا اللي خرمنا التعريفة واحنا اللي غرقنا السمك في الماية.
-                    </v-card-text>
-                  </v-card>
+                
+                <v-flex xs12 sm4 class="my-1">
+                    <v-btn
+                    @click="bottomNav = 'offers'"
+                    color="deep-purple accent-4"
+                    class="ma-2 white--text"
+                    tile
+                    outlined
+                    large
+                  >
+                    عروضنا  
+                    <v-icon left dark>mdi-gift</v-icon>
+                  </v-btn>
                 </v-flex>
-                <v-flex xs12 md4>
-                  <v-card flat class="transparent">
-                    <v-card-text class="text-center">
-                      <v-icon x-large class="red--text text--accent-2">mdi-wrench</v-icon>
-                    </v-card-text>
-                    <v-card-title primary-title class="layout justify-center">
-                      <div class="text-center"style="font-size: 30px;">أي كلام برده</div>
-                    </v-card-title>
-                    <v-card-text>
-                      احنا اللي دهنّا الهوا دوكو واحنا اللي خرمنا التعريفة واحنا اللي غرقنا السمك في الماية.
-                    </v-card-text>
-                  </v-card>
+
+                <v-flex xs12 sm4 class="my-1">
+                    <v-btn
+                    @click="bottomNav = 'contact'"
+                    color="deep-purple accent-4"
+                    class="ma-2 white--text"
+                    tile
+                    outlined
+                    large
+                  >
+                    تواصل معنا  
+                    <v-icon left dark>mdi-map-marker</v-icon>
+                  </v-btn>
                 </v-flex>
-              </v-layout>
+                </v-col>
+              </v-row>
+
             </v-container>
           </v-flex>
         </v-layout>
@@ -134,7 +146,7 @@
         >
           <v-flex xs12 sm4 class="my-4">
               <div class="text-center">
-                <h1 style="font-size: 40px;">منتجاتنا</h1>
+                <h1 style="font-size: 40px;">ﻣﻨﺘﺠﺎﺗﻨﺎ</h1>
               </div>
             </v-flex>
           <v-flex xs12>
@@ -143,17 +155,13 @@
                 <v-flex xs12 md6>
                   <v-card>
                     <v-img
-                      height="200px"
-                      src="assets/plane.jpg"
+                      height="300px"
+                      src="assets/product.jpg"
                     ></v-img>
 
                     <v-card-title>
-                      أول ممنتج
+                      ﺃﻧﺎﻟﻴﺎ
                     </v-card-title>
-
-                    <v-card-subtitle>
-                      النوع الأول
-                    </v-card-subtitle>
 
                     <v-card-actions>
                         <v-dialog
@@ -166,7 +174,7 @@
                               text
                               v-on="on"
                             >
-                              إعرف أكتر
+                              ﺇﻋﺮﻑ ﺃﻛﺘﺮ
                             </v-btn>
                           </template>
 
@@ -175,12 +183,13 @@
                               class="grey lighten-2"
                               primary-title
                             >
-                              <h2>المنتج الأول</h2>
+                              <h2>ﺃﻧﺎﻟﻴﺎ</h2>
                             </v-card-title>
 
-                            <v-card-text class="mt-2">
-                              هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. 
-                            </v-card-text>
+                            <v-card-title>
+                              هو عطر مستوحى من رائحة البخور ، و خلطته من التوت الأزرق واليانسون و بعض خشب الكشمير وعطر الزهور، مع قاعدة من المسك والعنبر والعسل.
+
+                            </v-card-title>
 
                             <v-divider></v-divider>
 
@@ -191,7 +200,7 @@
                                 text
                                 @click="dialog1 = false"
                               >
-                                العودة
+                                اﻟﻌﻮﺩﺓ
                               </v-btn>
                             </v-card-actions>
                           </v-card>
@@ -200,20 +209,16 @@
                   </v-card>
               </v-flex>
 
-              <v-flex xs12 md6>
+                <v-flex xs12 md6>
                   <v-card>
                     <v-img
-                      height="200px"
-                      src="assets/plane.jpg"
+                      height="300px"
+                      src="assets/product.jpg"
                     ></v-img>
 
                     <v-card-title>
-                      أول ممنتج
+                      سحر
                     </v-card-title>
-
-                    <v-card-subtitle>
-                      النوع الأول
-                    </v-card-subtitle>
 
                     <v-card-actions>
                         <v-dialog
@@ -226,7 +231,7 @@
                               text
                               v-on="on"
                             >
-                              إعرف أكتر
+                              ﺇﻋﺮﻑ ﺃﻛﺘﺮ
                             </v-btn>
                           </template>
 
@@ -235,12 +240,12 @@
                               class="grey lighten-2"
                               primary-title
                             >
-                              <h2>المنتج الأول</h2>
+                              <h2>سحر</h2>
                             </v-card-title>
 
-                            <v-card-text class="mt-2">
-                              هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. 
-                            </v-card-text>
+                            <v-card-title>
+                              مزيج راقٍ ودقيق مستوحى من غابات الشرق الاستوائية، ويعتمد بشكل أساس على رائحة الأرض ودفء العنبر ما يجعله مثاليًّا لجميع المناسبات.
+                            </v-card-title>
 
                             <v-divider></v-divider>
 
@@ -251,7 +256,7 @@
                                 text
                                 @click="dialog2 = false"
                               >
-                                العودة
+                                اﻟﻌﻮﺩﺓ
                               </v-btn>
                             </v-card-actions>
                           </v-card>
@@ -260,20 +265,17 @@
                   </v-card>
               </v-flex>
 
-              <v-flex xs12 md6>
+              
+                <v-flex xs12 md6>
                   <v-card>
                     <v-img
-                      height="200px"
-                      src="assets/plane.jpg"
+                      height="300px"
+                      src="assets/product.jpg"
                     ></v-img>
 
                     <v-card-title>
-                      أول ممنتج
+                      كاشمير
                     </v-card-title>
-
-                    <v-card-subtitle>
-                      النوع الأول
-                    </v-card-subtitle>
 
                     <v-card-actions>
                         <v-dialog
@@ -286,7 +288,7 @@
                               text
                               v-on="on"
                             >
-                              إعرف أكتر
+                              ﺇﻋﺮﻑ ﺃﻛﺘﺮ
                             </v-btn>
                           </template>
 
@@ -295,12 +297,12 @@
                               class="grey lighten-2"
                               primary-title
                             >
-                              <h2>المنتج الأول</h2>
+                              <h2>كاشمير</h2>
                             </v-card-title>
-
-                            <v-card-text class="mt-2">
-                              هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. 
-                            </v-card-text>
+                            
+                            <v-card-title>
+                              مُستمد من فاكهة اليوزو المنعشة  بعبيرها الحمضي المنعش، ينقلنا عطر كاشمير إلى ضفاف نهر اليانغتسي ، حيث تنمو ثمرة اليوزو منذ أكثر من ألف ومئتي سنة.
+                            </v-card-title>
 
                             <v-divider></v-divider>
 
@@ -311,7 +313,7 @@
                                 text
                                 @click="dialog3 = false"
                               >
-                                العودة
+                                اﻟﻌﻮﺩﺓ
                               </v-btn>
                             </v-card-actions>
                           </v-card>
@@ -323,17 +325,13 @@
               <v-flex xs12 md6>
                   <v-card>
                     <v-img
-                      height="200px"
-                      src="assets/plane.jpg"
+                      height="300px"
+                      src="assets/product.jpg"
                     ></v-img>
 
                     <v-card-title>
-                      أول ممنتج
+                      ﻏﺰﻝ
                     </v-card-title>
-
-                    <v-card-subtitle>
-                      النوع الأول
-                    </v-card-subtitle>
 
                     <v-card-actions>
                         <v-dialog
@@ -346,7 +344,7 @@
                               text
                               v-on="on"
                             >
-                              إعرف أكتر
+                              ﺇﻋﺮﻑ ﺃﻛﺘﺮ
                             </v-btn>
                           </template>
 
@@ -355,12 +353,13 @@
                               class="grey lighten-2"
                               primary-title
                             >
-                              <h2>المنتج الأول</h2>
+                              <h2>ﻏﺰﻝ</h2>
                             </v-card-title>
 
-                            <v-card-text class="mt-2">
-                              هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. 
-                            </v-card-text>
+                            <v-card-title>
+                              عطر طبيعي مخصص للاطفال و خالي من الكحول لحمايه بشره طفلك من الجفاف و الالتهاب و اعطاءه رائحة مميزه ، و يتكون من المسك و العسل و الفانيليا و يحتوي علي رائحة البرتقال
+
+                            </v-card-title>
 
                             <v-divider></v-divider>
 
@@ -371,7 +370,7 @@
                                 text
                                 @click="dialog4 = false"
                               >
-                                العودة
+                                اﻟﻌﻮﺩﺓ
                               </v-btn>
                             </v-card-actions>
                           </v-card>
@@ -384,6 +383,60 @@
         </v-layout>
       </section>
 
+      <section v-if="bottomNav == 'offers'">
+          <v-layout
+          column
+          wrap
+          class="my-12"
+          align-center
+        >
+          <v-flex xs12 sm4 class="my-4">
+            <div class="text-center">
+              <h1 style="font-size: 40px;">ﻋﺮﻭﺿﻨﺎ</h1>
+              <br>
+              <v-subheader>50 ﺑﻨﻘﺪﻡ ﻫﻨﺎ ﻣﻤﺠﻤﻮﻋﺔ ﻣﻤﻦ اﻟﻌﺮﻭﺽ ﻭاﻟﺨﺼﻮﻣﺎﺕ اﻟﻤﺘﺠﺪﺩﺓ اﻟﻠﻲ ﺑﺘﻮﺻﻞ ﻝ%</v-subheader>
+            </div>
+          </v-flex>
+          <v-flex xs12>
+            <v-container grid-list-xl>
+              <v-layout row wrap class="my-12">
+                <v-flex xs12 sm6>
+                    <v-card 
+                      color="red accent-2"
+                      dark
+                    >
+                      <v-card-text>
+                        <h3 class="white--text">
+                          اﻟﻌﺮﺽ اﻷﻭﻝ
+                        </h3>
+                        <div class="white--text">
+                          ﻟﻮ اﺷﺘﺮﻳﺖ اﺯاﺯﺗﻴﻦ ﺃﻧﺎﻟﻴﺎ ﺗﺎﺧﺪ ﻣﻌﺎﻫﻢ ﻭاﺣﺪﺓ ﻏﺰﻝ ﻫﺪﻳﺔ.
+                        </div>
+                      </v-card-text>
+                    </v-card>
+                </v-flex>
+
+                <v-flex xs12 sm6>
+                    <v-card
+                      color="red accent-2"
+                      dark
+                    >
+                      <v-card-text>
+                        <h3 class="white--text">
+                          اﻟﻌﺮﺽ اﻟﺜﺎﻧﻲ
+                        </h3>
+                        <div class="white--text">
+                          ﻟﻮ اﺷﺘﺮﻳﺖ اﺯاﺯﺓ ﺃﻧﺎﻟﻴﺎ ﺗﺎﺧﺪ ﻣﻌﺎﻫﺎ ﻛﺸﻤﻴﺮ ﺑﻨﺺ اﻟﺜﻤﻦ.
+                        </div>
+                      </v-card-text>
+                    </v-card>
+                </v-flex>
+              </v-layout>
+            </v-container>
+          </v-flex>
+        </v-layout>
+      </section>
+
       <section v-if="bottomNav == 'contact'">
         <v-layout
           column
@@ -393,9 +446,9 @@
         >
           <v-flex xs12 sm4 class="my-4">
             <div class="text-center">
-              <h1 style="font-size: 40px;">إزاي توصلنا؟</h1>
+              <h1 style="font-size: 40px;">ﺇﺯاﻱ ﺗﻮﺻﻠﻨﺎ؟</h1>
               <br>
-              <v-subheader>يسعدنا توصلكم معنا للحجز و الإستفسار عن طريق....</v-subheader>
+              <v-subheader>ﻳﺴﻌﺪﻧﺎ ﺗﻮﺻﻠﻜﻢ ﻣﻌﻨﺎ ﻟﻠﺤﺠﺰ ﻭ اﻹﺳﺘﻔﺴﺎﺭ ﻋﻦ ﻃﺮﻳﻖ....</v-subheader>
             </div>
           </v-flex>
           <v-flex xs12>
@@ -403,7 +456,7 @@
               <v-layout row wrap class="my-12">
 
                 <v-flex xs12 sm6>
-                  <img src="assets/logo.png" height="200px;"></img>
+                  <img src="assets/logo.png" height="200px;" class="mr-4"></img>
                 </v-flex>
 
                 <v-flex xs12 sm6>
@@ -452,7 +505,10 @@
           dark
         >
           <v-card-text class="text-center white--text">
-            <strong>العنود</strong> — {{ new Date().getFullYear() }} 
+            <blockquote class="blockquote">ﺇﻧّﻪ ﻣﺰﻳﺞ ﺭاﻕٍ ﻭﺩﻗﻴﻖ ﻣﺴﺘﻮﺣﻰ ﻣﻦ ﻏﺎﺑﺎﺕ اﻟﺸﺮﻕ اﻻﺳﺘﻮاﺋﻴﺔ،<br> ﻭﻳﻌﺘﻤﺪ ﺑﺸﻜﻞ ﺃﺳﺎﺱ ﻋﻠﻰ ﺭاﺋﺤﺔ اﻷﺭﺽ<br> ﻭﺩﻑء اﻟﻌﻨﺒﺮ ﻣﺎ ﻳﺠﻌﻠﻪ ﻣﺜﺎﻟﻴًّﺎ ﻟﺠﻤﻴﻊ اﻟﻤﻨﺎﺳﺒﺎﺕ.</blockquote>
+            <v-divider></v-divider>
+            <br>
+            <strong>اﻟﻌﻨﻮﺩ</strong> — {{ new Date().getFullYear() }} 
           </v-card-text>
         </v-card>
       </v-footer>
